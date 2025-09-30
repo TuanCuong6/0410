@@ -8,6 +8,7 @@ import everyday from "../assets/images/everyday.jpg";
 
 const OurJourney = () => {
   const [visibleItems, setVisibleItems] = useState([]);
+  const [descriptionText, setDescriptionText] = useState("");
   const sectionRef = useRef(null);
 
   const milestones = [
@@ -62,6 +63,24 @@ const OurJourney = () => {
   ];
 
   useEffect(() => {
+    // Hiệu ứng typing cho description
+    const fullText =
+      "Cùng nhìn lại từng chặng đường nhé, từ những bước chân đầu tiên...";
+    let index = 0;
+
+    const typingTimer = setInterval(() => {
+      if (index <= fullText.length) {
+        setDescriptionText(fullText.slice(0, index));
+        index++;
+      } else {
+        clearInterval(typingTimer);
+      }
+    }, 50);
+
+    return () => clearInterval(typingTimer);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -97,8 +116,8 @@ const OurJourney = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-pink-600 mb-4">
             Hành Trình Của Chúng Ta
           </h2>
-          <p className="text-lg md:text-xl text-pink-500 max-w-2xl mx-auto">
-            Cùng nhìn lại từng chặng đường nhé, từ những bước chân đầu tiên...
+          <p className="text-lg md:text-xl text-pink-500 max-w-2xl mx-auto min-h-[60px]">
+            {descriptionText}
           </p>
         </div>
 
