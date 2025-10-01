@@ -22,15 +22,15 @@ const OurJourney = () => {
     },
     {
       id: 2,
-      date: "Tháng 3/2025",
-      title: "Những Buổi Đầu Tiên",
+      date: "Tháng 3/2025 - 9/2025",
+      title: "Những Ngày Xa – Gần",
       description:
-        "Rồi những ngày tháng sau đó, chúng mình cùng nhau khám phá bao nhiêu thứ. Từ những gian hàng ồn ào ở hội chợ trường học, đến những ly cafe nói chuyện cả buổi chiều, hay là lần đầu cùng nhau tô những bức tượng vụng về.",
+        "Những ngày em còn ở quê, chúng ta chỉ gặp nhau khi anh tranh thủ về. Thời gian chẳng nhiều, nhưng mỗi cái nắm tay, mỗi cuộc hẹn nhỏ cũng khiến anh thấy thật trọn vẹn. Dù xa nhau, nhưng anh lại càng hiểu rõ em quan trọng với anh đến thế nào.",
       image: dating,
     },
     {
       id: 3,
-      date: "Trước 10/7/2025",
+      date: "🎁",
       title: "Những Món Quà Ý Nghĩa",
       description:
         "Anh vẫn giữ tất cả những gì em tặng. Không phải vì món quà đó giá trị thế nào, mà vì nó là minh chứng cho sự chân thành của em. Mỗi lần đọc lại mấy dòng chữ trong thiệp, anh lại cười một mình.",
@@ -47,7 +47,7 @@ const OurJourney = () => {
     {
       id: 5,
       date: "11/09/2025",
-      title: "Bước Ngoặt Hà Nội",
+      title: "Những ngày Hà Nội",
       description:
         "Em lên Hà Nội, một chương mới của cuộc đời sinh viên bắt đầu. Nhưng thật tốt khi chúng ta lại được ở gần nhau. Hà Nội đông đúc, nhưng vì có em, nó trở nên thân thuộc lạ thường.",
       image: hanoi,
